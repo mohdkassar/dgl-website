@@ -1,0 +1,29 @@
+.dgl__services {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  text-align: left;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.dgl_services-digital-marketing,
+.dgl_services-digital-marketing-options {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dgl_services-digital-marketing-option-1,
+.dgl_services-digital-marketing-option-2,
+.dgl_services-digital-marketing-option-3 {
+  border-style: solid solid solid solid;
+  border: 2px solid #2c4faa;
+  background-size: 200% auto;
+  margin: 1rem;
+  padding: 2rem 1rem;
+  border-radius: 15px;
+  width: 10rem;
+  background-color: #2c4faa;
+}

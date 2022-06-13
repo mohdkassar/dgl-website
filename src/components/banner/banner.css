@@ -1,0 +1,93 @@
+.dgl__banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 5rem 3rem;
+}
+
+.dgl__banner_logo img {
+  width: 85%;
+  height: 85%;
+}
+.dgl__banner-header_container {
+  text-align: left;
+}
+
+.dgl__banner-header_container h1 {
+  color: #fff;
+  font-family: var(--font-family);
+  font-weight: 1000;
+  font-size: 40px;
+}
+
+.dgl__banner-header_container h4 {
+  color: #4b6c94;
+  font-family: var(--font-family);
+  font-weight: 1000;
+  font-size: 15px;
+}
+
+.dgl__banner-header_container h6 {
+  color: #4b6c94;
+  font-family: var(--font-family);
+  font-weight: 1000;
+  font-size: 10px;
+  text-align: left;
+  width: 300px; /* whatever width you want */
+}
+
+.woms__banner-join {
+  display: flex;
+  align-items: center;
+}
+
+.woms__banner-join button,
+.woms__banner-menu_container button {
+  padding: 0.7rem 1rem;
+  color: #fff;
+  background-size: 200% auto;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.5s;
+  box-shadow: 0 0 5px rgb(176, 140, 204);
+  display: inline-block;
+  border: 0px;
+  background-image: linear-gradient(
+    to right,
+    #00d2ff 0%,
+    #3a7bd5 51%,
+    #00d2ff 100%
+  );
+}
+
+.woms__banner-join button:hover {
+  background-position: right center;
+}
+
+@media screen and (max-width: 700px) {
+  .woms__banner-header_container h1 {
+    font-weight: 1000;
+    font-size: 55px;
+    padding: 1rem 0rem;
+  }
+  .woms__banner_logo img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .woms__banner-header_container h1 {
+    font-weight: 1000;
+    font-size: 45px;
+    padding: 1rem 0rem;
+  }
+  .woms__banner_logo img {
+    width: 100%;
+    height: 6100%;
+  }
+}

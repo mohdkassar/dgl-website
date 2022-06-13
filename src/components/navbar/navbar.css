@@ -1,0 +1,133 @@
+.dgl__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+}
+
+.dgl__navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dgl__navbar-links_logo {
+  margin-left: 3rem;
+  cursor: pointer;
+}
+
+.dgl__navbar-links_logo img {
+  width: 62.56px;
+  height: 62.56px;
+}
+
+.dgl__navbar-links_container {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3rem;
+}
+
+.dgl__navbar-sign {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.dgl__navbar-links_container a {
+  flex-grow: 1;
+  color: #fff;
+  text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  text-transform: capitalize;
+  margin: 0 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.dgl__navbar-links_container a:before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  bottom: 0;
+  left: 0%;
+  border-bottom: 3px solid yellow;
+}
+
+@media screen and (max-width: 1100px) {
+  .dgl__navbar-links_container p,
+  .dgl__navbar-sign p,
+  .dgl__navbar-menu_container p {
+    margin: 0 2rem;
+  }
+  .dgl__navbar-links_logo {
+    margin-left: 2rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .dgl__navbar-links_container p,
+  .dgl__navbar-sign p,
+  .dgl__navbar-menu_container p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 1rem;
+  }
+  .dgl__navbar-links_container {
+    margin-right: 0rem;
+  }
+  .dgl__navbar-links_logo {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dgl__navbar-links_container p,
+  .dgl__navbar-sign p,
+  .dgl__navbar-menu_container p {
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 0.5rem;
+  }
+  .dgl__navbar-links_container {
+    margin-right: 0rem;
+  }
+  .dgl__navbar-links_logo {
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .dgl__navbar-links_container p,
+  .dgl__navbar-sign p,
+  .dgl__navbar-menu_container p {
+    font-size: 10px;
+    line-height: 14px;
+    margin: 0 1rem;
+  }
+  .dgl__navbar-links_container {
+    margin-right: 0rem;
+  }
+  .dgl__navbar-links_logo {
+    margin-left: 0rem;
+  }
+}
+
+.dgl__navbar-sign button,
+.dgl__navbar-menu_container button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  background: transparent;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border: 2px solid #7bf0f9;
+  outline: #7bf0f9;
+  cursor: pointer;
+  border-radius: 5px;
+}
