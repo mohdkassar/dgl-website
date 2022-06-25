@@ -1,6 +1,7 @@
 import React from "react";
 import "./banner.css";
 import banner_img from "../../assets/banner.png";
+import { BsFillCaretRightFill } from "react-icons/bs";
 
 const Banner = () => {
   return (
@@ -15,8 +16,14 @@ const Banner = () => {
           enim dignissim ullamcorper. Sed laoreet dolor eget posuere blandit.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </h6>
-        <div className="woms__banner-join">
-          <button>GET CONSULT</button>
+        <div className="dgl__banner-join">
+          {/* <button>GET CONSULT</button> */}
+          <div className="dgl__banner-join-content">
+            <p>GET CONSULT</p>
+          </div>
+          <div className="dgl__banner-join-icon">
+            <BsFillCaretRightFill></BsFillCaretRightFill>
+          </div>
         </div>
       </div>
       <div className="dgl__banner_logo">

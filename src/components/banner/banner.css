@@ -41,6 +41,32 @@
   align-items: center;
 }
 
+.dgl__banner-join {
+  align-items: center;
+  width: 30%;
+  flex-flow: row wrap;
+  box-sizing: border-box;
+  display: flex;
+  place-content: flex-start space-between;
+  align-items: center;
+  border: 1px solid #2662c3;
+  overflow: hidden; /*  added  */
+  padding: 0.1rem;
+}
+
+.dgl__banner-join-icon {
+  color: #fff;
+}
+
+.dgl__banner-join-content {
+  color: #fff;
+  border-width: 2px;
+}
+
+.dgl__banner-join-content p {
+  font-size: 10px;
+}
+
 .woms__banner-join button,
 .woms__banner-menu_container button {
   padding: 0.7rem 1rem;

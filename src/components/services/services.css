@@ -8,6 +8,18 @@
   padding: 2rem;
 }
 
+.dgl_services-headline-title {
+  color: #01c8e9;
+}
+
+.dgl_services-digital-marketing-title {
+  color: white;
+}
+
+.dgl_services-headline-subheader {
+  color: #fff;
+}
+
 .dgl_services-digital-marketing,
 .dgl_services-digital-marketing-options {
   flex: 1;
@@ -21,9 +33,58 @@
   border-style: solid solid solid solid;
   border: 2px solid #2c4faa;
   background-size: 200% auto;
-  margin: 1rem;
-  padding: 2rem 1rem;
-  border-radius: 15px;
+  margin: 1rem 1rem;
   width: 10rem;
-  background-color: #2c4faa;
+  background-color: #0b102d;
+  padding: 1rem 1rem;
+}
+
+.dgl_services-digital-marketing-option-1 h1,
+.dgl_services-digital-marketing-option-2 h1,
+.dgl_services-digital-marketing-option-3 h1 {
+  font-size: x-large;
+}
+
+.dgl_services-digital-marketing-option-paragraph {
+  font-size: small;
+  color: white;
+}
+
+.dgl_services-digital-development {
+  display: flex;
+}
+
+.dgl_services-digital-development-header {
+  color: white;
+}
+
+.dgl_services-digital-development-dev-1 {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  border-style: solid solid solid solid;
+  border: 2px solid #2c4faa;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+}
+
+.dgl_services-digital-development-dev-1-icon {
+  align-items: center;
+  display: flex;
+  align-self: center;
+}
+
+.dgl_services-digital-development-dev-1-icon img {
+  align-items: center;
+}
+
+.dgl_services-digital-transformation-content {
+  align-items: center;
+  display: flex;
+  align-self: center;
+  color: white;
+}
+
+.dgl_services-digital-transformation-content-button-list {
+  padding: 1rem 1rem;
 }
