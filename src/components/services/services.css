@@ -5,7 +5,7 @@
   align-items: flex-start;
   text-align: left;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0rem 3rem;
 }
 
 .dgl_services-headline-title {
@@ -30,13 +30,31 @@
 .dgl_services-digital-marketing-option-1,
 .dgl_services-digital-marketing-option-2,
 .dgl_services-digital-marketing-option-3 {
-  border-style: solid solid solid solid;
-  border: 2px solid #2c4faa;
   background-size: 200% auto;
   margin: 1rem 1rem;
   width: 10rem;
   background-color: #0b102d;
   padding: 1rem 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #3a7bd5 0%,
+    #003c91 51%,
+    #003c91 100%
+  );
+  position: relative;
+  flex-grow: 1;
+}
+
+.dgl_services-digital-marketing-option-1:before,
+.dgl_services-digital-marketing-option-2:before,
+.dgl_services-digital-marketing-option-3:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  bottom: 50%;
+  left: 0%;
+  border-left: 3px solid yellow;
 }
 
 .dgl_services-digital-marketing-option-1 h1,
@@ -62,10 +80,26 @@
   display: flex;
   align-items: center;
   color: #fff;
-  border-style: solid solid solid solid;
-  border: 2px solid #2c4faa;
   margin: 1rem 1rem;
   padding: 1rem 1rem;
+  background-image: linear-gradient(
+    to bottom,
+    #3a7bd5 0%,
+    #003c91 51%,
+    #003c91 100%
+  );
+  position: relative;
+  flex-grow: 1;
+}
+
+.dgl_services-digital-development-dev-1:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  bottom: 50%;
+  left: 0%;
+  border-left: 3px solid yellow;
 }
 
 .dgl_services-digital-development-dev-1-icon {

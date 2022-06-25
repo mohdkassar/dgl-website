@@ -4,12 +4,15 @@ import ai_img from "../../assets/ai.png";
 
 const Sustainability = () => {
   return (
-    <div className="dgl__banner">
-      <div className="dgl__banner_logo">
-        <img src={ai_img} alt="banner" />
+    <div className="dgl__sustainabilty">
+      <div className="dgl__sustainabilty_logo">
+        <img src={ai_img} alt="sustainabilty" style={{ width: "60%" }} />
       </div>
-      <div className="dgl__banner-header_container">
-        <h1>Work in AI/VR/Sustainability</h1>
+      <div className="dgl__sustainabilty-header_container">
+        <h1>
+          <span>Work in AI/VR/</span>
+          <span style={{ display: "block" }}>Sustainability</span>
+        </h1>
         <h4>RECEIVE A COMPLIMENTARY CONSULTANCY</h4>
         <h6>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio
