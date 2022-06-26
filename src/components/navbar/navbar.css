@@ -1,8 +1,6 @@
 .dgl__navbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0.5rem;
   position: sticky;
   top: 0;
   z-index: 2;
@@ -10,9 +8,11 @@
 }
 
 .dgl__navbar-links {
-  flex: 1;
-  display: flex;
   justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
 
@@ -30,28 +30,24 @@
   display: flex;
   flex-direction: row;
   margin-right: 3rem;
+  height: 100%;
 }
 
-.dgl__navbar-sign {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.dgl__navbar-links_container a {
+.dgl__navbar-links_container_a_active,
+.dgl__navbar-links_container_a_not_active {
   flex-grow: 1;
   color: #fff;
   text-decoration: none;
   font-weight: 500;
   font-size: 16px;
-  line-height: 25px;
   text-transform: capitalize;
-  margin: 0 3rem;
+  margin: 0 2rem;
   cursor: pointer;
   position: relative;
+  padding: 1rem 1rem;
 }
 
-.dgl__navbar-links_container a:before {
+.dgl__navbar-links_container_a_active:before {
   content: "";
   position: absolute;
   width: 50%;
@@ -118,19 +114,4 @@
   .dgl__navbar-links_logo {
     margin-left: 0rem;
   }
-}
-
-.dgl__navbar-sign button,
-.dgl__navbar-menu_container button {
-  padding: 0.5rem 1rem;
-  color: #fff;
-  background: transparent;
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 15px;
-  border: 2px solid #7bf0f9;
-  outline: #7bf0f9;
-  cursor: pointer;
-  border-radius: 5px;
 }

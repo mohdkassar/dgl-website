@@ -85,11 +85,16 @@ const NavBar = ({ navHeader }) => {
         <div className="dgl__navbar-links_container">
           {navHeader.map((header, index) => (
             <a
+              className={
+                activeIndex === index
+                  ? "dgl__navbar-links_container_a_active"
+                  : "dgl__navbar-links_container_a_not_active"
+              }
               style={{
                 background:
                   activeIndex === index
-                    ? " linear-gradient(to top,#0076dd 0%,#01458c 50%,#01458c 100%)"
-                    : "linear-gradient(to top,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
+                    ? " linear-gradient(to top,#0b122f 0%,#1f497b 70%,#1f497b 100%)"
+                    : "#0b122f",
               }}
               href={`#${header.headerID}`}
             >
