@@ -2,6 +2,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: linear-gradient(
+    to left,
+    #0d1838 0%,
+    #0d1838 40%,
+    #173068 100%
+  );
+  margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .dgl__mission-header_container {

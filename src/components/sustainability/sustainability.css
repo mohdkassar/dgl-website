@@ -1,7 +1,14 @@
 .dgl__sustainabilty {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
+  background-image: linear-gradient(
+    to right,
+    #0d1838 0%,
+    #0d1838 40%,
+    #173068 100%
+  );
+  margin-top: 2rem;
 }
 
 .dgl__sustainabilty-header_container {

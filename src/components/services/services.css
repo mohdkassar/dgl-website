@@ -37,9 +37,9 @@
   padding: 1rem 1rem;
   background-image: linear-gradient(
     to bottom,
-    #3a7bd5 0%,
-    #003c91 51%,
-    #003c91 100%
+    #0076dd 0%,
+    #01458c 50%,
+    #01458c 100%
   );
   position: relative;
   flex-grow: 1;
@@ -84,9 +84,9 @@
   padding: 1rem 1rem;
   background-image: linear-gradient(
     to bottom,
-    #3a7bd5 0%,
-    #003c91 51%,
-    #003c91 100%
+    #0076dd 0%,
+    #01458c 50%,
+    #01458c 100%
   );
   position: relative;
   flex-grow: 1;
@@ -121,4 +121,25 @@
 
 .dgl_services-digital-transformation-content-button-list {
   padding: 1rem 1rem;
+}
+
+.dgl_services-digital-transformation-content-button-a,
+.dgl_services-digital-transformation-content-button-b {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dgl_services-digital-transformation-content {
+  background-image: linear-gradient(
+    to right,
+    #0a1230 0%,
+    #0a1230 50%,
+    #0c1e4c 100%
+  );
+  border-right: 3px solid #0076dd;
+}
+
+.dgl_services-digital-transformation-content-description {
+  margin: 2rem 2rem;
 }

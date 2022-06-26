@@ -2,8 +2,15 @@ import React from "react";
 import "./services.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import appDevelopmentIcon from "../../assets/app_development_icon.png";
+import { useState } from "react";
 
 const Services = () => {
+  const [digitalTransOption, setdigitalTransOption] = useState("a");
+
+  const digitalTransOptionPressed = (option) => {
+    setdigitalTransOption(option);
+  };
+
   return (
     <div className="dgl__services">
       <div className="dgl_services-headline">
@@ -147,25 +154,74 @@ const Services = () => {
         </div>
         <div className="dgl_services-digital-transformation-content">
           <div className="dgl_services-digital-transformation-content-button-list">
-            <div className="dgl_services-digital-transformation-content-button-a">
-              <FaAngleLeft size={40}></FaAngleLeft>
+            <div
+              className="dgl_services-digital-transformation-content-button-a"
+              style={{
+                width: "100px",
+                height: "100px",
+                backgroundImage:
+                  digitalTransOption === "a"
+                    ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
+                    : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
+                borderTop:
+                  digitalTransOption === "a" ? "1px solid yellow" : "none",
+              }}
+              onClick={() => digitalTransOptionPressed("a")}
+            >
+              {digitalTransOption === "a" ? (
+                <FaAngleRight size={20}></FaAngleRight>
+              ) : (
+                <FaAngleLeft size={20}></FaAngleLeft>
+              )}
             </div>
-            <div className="dgl_services-digital-transformation-content-button-b">
-              <FaAngleRight size={40}></FaAngleRight>
+            <div
+              className="dgl_services-digital-transformation-content-button-b"
+              style={{
+                width: "100px",
+                height: "100px",
+                backgroundImage:
+                  digitalTransOption === "b"
+                    ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
+                    : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
+                borderTop:
+                  digitalTransOption === "b" ? "1px solid yellow" : "none",
+              }}
+              onClick={() => digitalTransOptionPressed("b")}
+            >
+              {digitalTransOption === "b" ? (
+                <FaAngleRight size={20}></FaAngleRight>
+              ) : (
+                <FaAngleLeft size={20}></FaAngleLeft>
+              )}
             </div>
           </div>
-          <div className="dgl_services-digital-transformation-content-description">
-            <h1>Digital Business Development</h1>
-            <p style={{ fontSize: "small" }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-              odio neque, tempor at ante vel, dictum rutrum urna. Cras molestie
-              interdum massa, in imperdiet turpis sollicitudin quis. In
-              malesuada orci vel enim dignissim ullamcorper. Sed laoreet dolor
-              eget posuere blandit. Lorem ipsum dolor sit amet, consectetur
-              adipiscing elit. Sed ante urna, tristique in sapien vitae, egestas
-              egestas massa.
-            </p>
-          </div>
+          {digitalTransOption === "b" ? (
+            <div className="dgl_services-digital-transformation-content-description">
+              <h1>Digital Business Development</h1>
+              <p style={{ fontSize: "small" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                odio neque, tempor at ante vel, dictum rutrum urna. Cras
+                molestie interdum massa, in imperdiet turpis sollicitudin quis.
+                In malesuada orci vel enim dignissim ullamcorper. Sed laoreet
+                dolor eget posuere blandit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed ante urna, tristique in sapien
+                vitae, egestas egestas massa.
+              </p>
+            </div>
+          ) : (
+            <div className="dgl_services-digital-transformation-content-description">
+              <h1>Digital Test Development</h1>
+              <p style={{ fontSize: "small" }}>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
+                odio neque, tempor at ante vel, dictum rutrum urna. Cras
+                molestie interdum massa, in imperdiet turpis sollicitudin quis.
+                In malesuada orci vel enim dignissim ullamcorper. Sed laoreet
+                dolor eget posuere blandit. Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit. Sed ante urna, tristique in sapien
+                vitae, egestas egestas massa.
+              </p>
+            </div>
+          )}
         </div>
       </div>
     </div>
