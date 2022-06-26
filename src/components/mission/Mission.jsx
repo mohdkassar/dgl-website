@@ -2,9 +2,9 @@ import React from "react";
 import "./mission.css";
 import mission_img from "../../assets/mission.png";
 
-const Mission = () => {
+const Mission = ({ refference }) => {
   return (
-    <div className="dgl__mission">
+    <div className="dgl__mission" ref={refference}>
       <div className="dgl__mission-header_container">
         <h1 style={{ color: "#01c8e9" }}>
           <span>YOU DESERVE</span>

@@ -4,7 +4,7 @@ import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import appDevelopmentIcon from "../../assets/app_development_icon.png";
 import { useState } from "react";
 
-const Services = () => {
+const Services = ({ refference }) => {
   const [digitalTransOption, setdigitalTransOption] = useState("a");
 
   const digitalTransOptionPressed = (option) => {
@@ -12,7 +12,7 @@ const Services = () => {
   };
 
   return (
-    <div className="dgl__services">
+    <div className="dgl__services" ref={refference}>
       <div className="dgl_services-headline">
         <div className="dgl_services-headline-title">
           <h2>
@@ -39,7 +39,7 @@ const Services = () => {
           </h3>
         </div>
         <div className="dgl_services-digital-marketing-options">
-          <div className="dgl_services-digital-marketing-option-1">
+          <div className="dgl_services-digital-marketing-option">
             <div>
               <h1 style={{ color: "#fff" }}>SEO</h1>
             </div>
@@ -50,7 +50,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="dgl_services-digital-marketing-option-2">
+          <div className="dgl_services-digital-marketing-option">
             <div>
               <h1 style={{ color: "#fff" }}>Social Media</h1>
             </div>
@@ -61,7 +61,7 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="dgl_services-digital-marketing-option-3">
+          <div className="dgl_services-digital-marketing-option">
             <div>
               <h1 style={{ color: "#fff" }}>Copywriting</h1>
             </div>

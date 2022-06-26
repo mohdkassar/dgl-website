@@ -2,9 +2,9 @@ import React from "react";
 import "./sustainability.css";
 import ai_img from "../../assets/ai.png";
 
-const Sustainability = () => {
+const Sustainability = ({ refference }) => {
   return (
-    <div className="dgl__sustainabilty">
+    <div className="dgl__sustainabilty" ref={refference}>
       <div className="dgl__sustainabilty_logo">
         <img src={ai_img} alt="sustainabilty" style={{ width: "60%" }} />
       </div>

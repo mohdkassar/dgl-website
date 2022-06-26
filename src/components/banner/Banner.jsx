@@ -3,9 +3,9 @@ import "./banner.css";
 import banner_img from "../../assets/banner.png";
 import { BsFillCaretRightFill } from "react-icons/bs";
 
-const Banner = () => {
+const Banner = ({ refference }) => {
   return (
-    <div className="dgl__banner">
+    <div className="dgl__banner" ref={refference}>
       <div className="dgl__banner-header_container">
         <h4>WELCOME TO DIGILANCE</h4>
         <h1>Infinitely Possible</h1>
