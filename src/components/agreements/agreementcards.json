@@ -1,0 +1,47 @@
+{
+  "startup": {
+    "duration": {
+      "title": "One-Time",
+      "subheader": "Receive your re-inforcements"
+    },
+    "title": "Start-Up",
+    "id": "startup",
+    "features": [
+      "Creative Execution",
+      "Copywriting Services",
+      "Marketing Stategies",
+      "Logowork & Branding",
+      "Web & App Development"
+    ]
+  },
+  "grow": {
+    "duration": {
+      "title": "6 Months+",
+      "subheader": "Capture your opportunities"
+    },
+    "title": "Grow",
+    "id": "grow",
+    "features": [
+      "Startup Services+",
+      "Retainer Offerings",
+      "Monthly Intelligence",
+      "Community Intelligence",
+      "Continuous Improvement"
+    ]
+  },
+  "accelerate": {
+    "duration": {
+      "title": "12 Months+",
+      "subheader": "Maximize your gains"
+    },
+    "title": "Accelerate",
+    "id": "accelerate",
+    "features": [
+      "Grow Services+",
+      "Biweekly Intelligence",
+      "Digital Transformation",
+      "Infrastructure Development",
+      "Business Development Roadmap"
+    ]
+  }
+}

@@ -1,10 +1,19 @@
 import React from "react";
 import "./agreements.css";
-import accelerateIcon from "../../assets/accelerate_icon.png";
-import growIcon from "../../assets/grow_icon.png";
-import startUpIcon from "../../assets/start_up_icon.png";
+import { useState } from "react";
+import agreementCards from "./agreementcards.json";
+import AgreementCard from "./AgreementCard";
 
 const Agreements = ({ refference }) => {
+  const [activeCard, setActiveCard] = useState(agreementCards.grow);
+
+  const cardPressed = (option) => {
+    let activeOption = Object.keys(agreementCards).find((card) => {
+      return agreementCards[card].id === option;
+    });
+    setActiveCard(agreementCards[activeOption]);
+  };
+
   return (
     <div className="dgl__agreements" ref={refference}>
       <div className="dgl_agreements-headline">
@@ -21,99 +30,21 @@ const Agreements = ({ refference }) => {
         </div>
       </div>
       <div className="dgl_agreements-cards">
-        <div className="dgl_agreements-card">
-          <div className="dgl_agreements-card-duration">
-            <h4>One-Time</h4>
-            <p>Receive your re-inforcements</p>
-          </div>
-          <div className="dgl_agreements-card-logo">
-            <img src={startUpIcon} alt="start-up" />
-          </div>
-          <div className="dgl_agreements-card-title">
-            <h1>Start-Up</h1>
-          </div>
-          <div className="dgl_agreements-card-features">
-            <ul className="dgl_agreements-card-features-list">
-              <li className="dgl_agreements-card-feature">
-                <p>Creative Execution</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Copywriting Services</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Marketing Stategies</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Logowork & Branding</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Web & App Development</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="dgl_agreements-card">
-          <div className="dgl_agreements-card-duration">
-            <h4>6 Months+</h4>
-            <p>Capture your opportunities</p>
-          </div>
-          <div className="dgl_agreements-card-logo">
-            <img src={growIcon} alt="grow" />
-          </div>
-          <div className="dgl_agreements-card-title">
-            <h1>Grow</h1>
-          </div>
-          <div className="dgl_agreements-card-features">
-            <ul className="dgl_agreements-card-features-list">
-              <li className="dgl_agreements-card-feature">
-                <p>Startup Services+</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Retainer Offerings</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Monthly Intelligence</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Community Intelligence</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Continuous Improvement</p>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div className="dgl_agreements-card">
-          <div className="dgl_agreements-card-duration">
-            <h4>12 Months+</h4>
-            <p>Maximize your gains</p>
-          </div>
-          <div className="dgl_agreements-card-logo">
-            <img src={accelerateIcon} alt="accelerate" />
-          </div>
-          <div className="dgl_agreements-card-title">
-            <h1>Accelerate</h1>
-          </div>
-          <div className="dgl_agreements-card-features">
-            <ul className="dgl_agreements-card-features-list">
-              <li className="dgl_agreements-card-feature">
-                <p>Grow Services+</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Biweekly Intelligence</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Digital Transformation</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Infrastructure Development</p>
-              </li>
-              <li className="dgl_agreements-card-feature">
-                <p>Business Development Roadmap</p>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <AgreementCard
+          active={activeCard.id === "startup" ? true : false}
+          onClick={cardPressed}
+          parameters={agreementCards.startup}
+        ></AgreementCard>
+        <AgreementCard
+          active={activeCard.id === "grow" ? true : false}
+          onClick={cardPressed}
+          parameters={agreementCards.grow}
+        ></AgreementCard>
+        <AgreementCard
+          active={activeCard.id === "accelerate" ? true : false}
+          onClick={cardPressed}
+          parameters={agreementCards.accelerate}
+        ></AgreementCard>
       </div>
     </div>
   );

@@ -26,11 +26,20 @@
 }
 
 .dgl_agreements-card {
-  background: #01458c;
+  background: #0a1230;
   line-height: 5px;
-  height: 500px;
+  height: 450px;
   padding: 1rem 1rem;
   border: solid 1px #fff;
+}
+
+.dgl_agreements-card-active {
+  background: linear-gradient(to bottom, #0076dd 0%, #0076dd 50%, #01458c 100%);
+  line-height: 5px;
+  height: 475px;
+  padding: 1rem 1rem;
+  border: solid 1px #fff;
+  border-bottom: 4px solid yellow;
 }
 
 .dgl_agreements-card-duration {
@@ -60,4 +69,8 @@
 
 .dgl_agreements-card-feature p {
   color: #fff;
+}
+
+.dgl_agreements-card-features-list {
+  list-style: none;
 }
