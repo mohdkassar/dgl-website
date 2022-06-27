@@ -1,0 +1,63 @@
+.dgl__agreements {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin: 1rem 1rem;
+}
+
+.dgl_agreements-headline {
+  text-align: left;
+}
+
+.dgl_agreements-headline-title {
+  color: #01c8e9;
+}
+
+.dgl_agreements-headline-subheader {
+  color: #fff;
+}
+
+.dgl_agreements-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dgl_agreements-card {
+  background: #01458c;
+  line-height: 5px;
+  height: 500px;
+  padding: 1rem 1rem;
+  border: solid 1px #fff;
+}
+
+.dgl_agreements-card-duration {
+  color: #fff;
+  text-align: center;
+}
+
+.dgl_agreements-card-logo {
+  text-align: center;
+}
+
+.dgl_agreements-card-logo img {
+  width: 40%;
+  height: 40%;
+}
+
+.dgl_agreements-card-title {
+  text-align: center;
+  color: #fff;
+}
+
+.dgl_agreements-card-features {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dgl_agreements-card-feature p {
+  color: #fff;
+}
