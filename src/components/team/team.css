@@ -1,0 +1,62 @@
+.dgl__team {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 1rem 3rem;
+  margin: 1rem 1rem;
+}
+
+.dgl__team-headline {
+  text-align: left;
+}
+
+.dgl__team-headline-title {
+  color: #01c8e9;
+}
+
+.dgl__team-cards {
+  display: flex;
+  justify-content: space-between;
+}
+
+.dgl__team-card {
+  background: #0a1230;
+  height: 850px;
+  border: solid 2px #01c8e9;
+  margin: 1rem 1rem;
+}
+
+.dgl__team-card-logo {
+  width: 500px;
+  border-bottom: solid 4px yellow;
+}
+
+.dgl__team-card-logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.dgl__team-card-content {
+  line-height: 25px;
+  text-align: center;
+}
+
+.dgl__team-card-content-title {
+  color: yellow;
+}
+
+.dgl__team-card-content-role {
+  color: #4b6c94;
+}
+
+.dgl__team-card-content-about {
+  color: #4b6c94;
+  text-align: center;
+}
+
+.dgl__team-card-content-about h6 {
+  text-align: justify;
+  margin: 0 auto;
+  max-width: 400px;
+}
