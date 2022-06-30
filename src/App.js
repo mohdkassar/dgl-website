@@ -7,6 +7,7 @@ import {
   Sustainability,
   Agreements,
   Team,
+  Contact,
 } from "./components";
 import { useRef } from "react";
 
@@ -17,6 +18,7 @@ function App() {
   const sustainabilityRef = useRef();
   const agreementsRef = useRef();
   const teamRef = useRef();
+  const contactRef = useRef();
 
   const navHeader = [
     {
@@ -49,6 +51,11 @@ function App() {
       headerRef: teamRef,
       headerID: "team",
     },
+    {
+      headerTitle: "Contact",
+      headerRef: contactRef,
+      headerID: "contact",
+    },
   ];
 
   return (
@@ -60,6 +67,7 @@ function App() {
       <Sustainability refference={sustainabilityRef}></Sustainability>
       <Agreements refference={agreementsRef}></Agreements>
       <Team refference={teamRef}></Team>
+      <Contact refference={contactRef}></Contact>
     </div>
   );
 }
