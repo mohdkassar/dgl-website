@@ -3,6 +3,7 @@ import "./agreements.css";
 import accelerateIcon from "../../assets/accelerate_icon.png";
 import growIcon from "../../assets/grow_icon.png";
 import startUpIcon from "../../assets/start_up_icon.png";
+import Button from "../button/Button";
 
 const AgreementCard = ({ active, onClick, parameters }) => {
   return (
@@ -39,6 +40,12 @@ const AgreementCard = ({ active, onClick, parameters }) => {
             );
           })}
         </ul>
+      </div>
+      <div
+        className="dgl_agreements-card-inquire"
+        style={{ display: active ? "flex" : "none" }}
+      >
+        <Button name={"INQUIRE NOW"}></Button>
       </div>
     </div>
   );
