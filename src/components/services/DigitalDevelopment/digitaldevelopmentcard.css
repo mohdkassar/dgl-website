@@ -3,7 +3,6 @@
   align-items: center;
   color: #fff;
   margin: 1rem 1rem;
-  padding: 1rem 1rem;
   background: linear-gradient(
     to bottom,
     var(--_p, #0a1230) 0%,
@@ -29,13 +28,21 @@
   --_q: #01458c;
   --_r: #01458c;
   --_s: yellow;
-  border-bottom: 1px solid yellow;
+  border-bottom: 3px solid var(--yellow);
 }
 
 .dgl_services-digital-development-card-icon {
   align-items: center;
   display: flex;
   align-self: center;
+  justify-content: center;
+  background-color: var(--dark_blue);
+}
+
+.dgl_services-digital-development-card-icon,
+.dgl_services-digital-development-card-content {
+  height: 150px;
+  padding: 1rem 1rem;
 }
 
 .dgl_services-digital-development-card-icon img {

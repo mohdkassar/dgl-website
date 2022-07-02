@@ -1,0 +1,14 @@
+.dgl__headline {
+  margin-bottom: 2rem;
+}
+
+.dgl__headline-title {
+  color: var(--light_blue);
+  font-size: 25px;
+}
+
+.dgl__headline-subheader {
+  color: var(--grey);
+  font-size: 15px;
+  font-weight: 700;
+}

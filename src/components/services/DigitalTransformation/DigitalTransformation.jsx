@@ -2,6 +2,7 @@ import React from "react";
 import "./digitaltransformation.css";
 import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
 import { useState } from "react";
+import Separator from "../../seperator/Separator";
 
 const DigitalTransformation = () => {
   const [digitalTransOption, setdigitalTransOption] = useState("a");
@@ -29,13 +30,11 @@ const DigitalTransformation = () => {
         <div
           className="dgl_services-digital-transformation-content-button-a"
           style={{
-            width: "100px",
-            height: "100px",
             backgroundImage:
               digitalTransOption === "a"
                 ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
                 : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
-            borderTop: digitalTransOption === "a" ? "1px solid yellow" : "none",
+            borderTop: digitalTransOption === "a" ? "3px solid yellow" : "none",
           }}
           onClick={() => digitalTransOptionPressed("a")}
         >
@@ -48,13 +47,11 @@ const DigitalTransformation = () => {
         <div
           className="dgl_services-digital-transformation-content-button-b"
           style={{
-            width: "100px",
-            height: "100px",
             backgroundImage:
               digitalTransOption === "b"
                 ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
                 : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
-            borderTop: digitalTransOption === "b" ? "1px solid yellow" : "none",
+            borderTop: digitalTransOption === "b" ? "3px solid yellow" : "none",
           }}
           onClick={() => digitalTransOptionPressed("b")}
         >
@@ -68,14 +65,16 @@ const DigitalTransformation = () => {
       {digitalTransOption === "b" ? (
         <div className="dgl_services-digital-transformation-content-description">
           <h1>{digitalTransformationJSON[0].title}</h1>
-          <p style={{ fontSize: "small" }}>
+          <Separator width={"5%"}></Separator>
+          <p style={{ fontSize: "medium" }}>
             {digitalTransformationJSON[0].description}
           </p>
         </div>
       ) : (
         <div className="dgl_services-digital-transformation-content-description">
           <h1>{digitalTransformationJSON[1].title}</h1>
-          <p style={{ fontSize: "small" }}>
+          <Separator width={"5%"}></Separator>
+          <p style={{ fontSize: "medium" }}>
             {digitalTransformationJSON[1].description}
           </p>
         </div>

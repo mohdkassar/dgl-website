@@ -3,6 +3,7 @@ import "./agreements.css";
 import { useState } from "react";
 import agreementCards from "./agreementcards.json";
 import AgreementCard from "./AgreementCard";
+import Headline from "../headline/Headline";
 
 const Agreements = ({ refference }) => {
   const [activeCard, setActiveCard] = useState(agreementCards.grow);
@@ -16,19 +17,12 @@ const Agreements = ({ refference }) => {
 
   return (
     <div className="dgl__agreements" ref={refference}>
-      <div className="dgl_agreements-headline">
-        <div className="dgl_agreements-headline-title">
-          <h2>
-            <span style={{ color: "#fff" }}>Our</span> Services
-          </h2>
-        </div>
-        <div className="dgl_agreements-headline-subheader">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio
-            neque, tempor at ante vel, dictum rutrum urna.
-          </p>
-        </div>
-      </div>
+      <Headline
+        title={"Our Agreements"}
+        subheader={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio neque, tempor at ante vel, dictum rutrum urna."
+        }
+      ></Headline>
       <div className="dgl_agreements-cards">
         <AgreementCard
           active={activeCard.id === "startup" ? true : false}

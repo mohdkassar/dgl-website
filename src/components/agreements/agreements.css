@@ -5,18 +5,7 @@
   flex-direction: column;
   padding: 1rem 3rem;
   margin: 1rem 1rem;
-}
-
-.dgl_agreements-headline {
   text-align: left;
-}
-
-.dgl_agreements-headline-title {
-  color: #01c8e9;
-}
-
-.dgl_agreements-headline-subheader {
-  color: #fff;
 }
 
 .dgl_agreements-cards {

@@ -5,23 +5,17 @@ import digitalmarketingJSON from "./DigitalMarketing/digitalmarketing.json";
 import DigitalDevelopmentCard from "./DigitalDevelopment/DigitalDevelopmentCard";
 import digitaldevelopmentJSON from "./DigitalDevelopment/digitaldevelopment.json";
 import DigitalTransformation from "./DigitalTransformation/DigitalTransformation";
+import Headline from "../headline/Headline";
 
 const Services = ({ refference }) => {
   return (
     <div className="dgl__services" ref={refference}>
-      <div className="dgl_services-headline">
-        <div className="dgl_services-headline-title">
-          <h2>
-            <span style={{ color: "#fff" }}>Our</span> Services
-          </h2>
-        </div>
-        <div className="dgl_services-headline-subheader">
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio
-            neque, tempor at ante vel, dictum rutrum urna.
-          </p>
-        </div>
-      </div>
+      <Headline
+        title={"Our Services"}
+        subheader={
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio neque, tempor at ante vel, dictum rutrum urna."
+        }
+      ></Headline>
       <div className="dgl_services-digital-marketing">
         <div className="dgl_services-digital-marketing-title">
           <h3>

@@ -13,7 +13,7 @@ const DigitalDevelopmentCard = ({ parameters }) => {
           alt={parameters.id}
         />
       </div>
-      <div>
+      <div className="dgl_services-digital-development-card-content">
         <h2>{parameters.title}</h2>
         <p>{parameters.description}</p>
       </div>

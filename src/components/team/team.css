@@ -5,14 +5,7 @@
   flex-direction: column;
   padding: 1rem 3rem;
   margin: 1rem 1rem;
-}
-
-.dgl__team-headline {
   text-align: left;
-}
-
-.dgl__team-headline-title {
-  color: #01c8e9;
 }
 
 .dgl__team-cards {

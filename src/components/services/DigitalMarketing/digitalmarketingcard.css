@@ -31,7 +31,7 @@
   --_u: #01458c;
   --_v: #01458c;
   --_w: var(--yellow);
-  border-bottom: 1px solid var(--yellow);
+  border-bottom: 3px solid var(--yellow);
 }
 
 .dgl_services-digital-marketing-card h1 {
