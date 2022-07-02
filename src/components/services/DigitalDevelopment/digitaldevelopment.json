@@ -1,0 +1,17 @@
+[
+  {
+    "id": "app-development",
+    "title": "App Development",
+    "description": "Labore excepteur ea eu dolor esse incididunt aliqua qui nostrud dolor reprehenderit nulla."
+  },
+  {
+    "id": "web-development",
+    "title": "Web Development",
+    "description": "Labore excepteur ea eu dolor esse incididunt aliqua qui nostrud dolor reprehenderit nulla."
+  },
+  {
+    "id": "ux-ui-development",
+    "title": "UX/UI Development",
+    "description": "Labore excepteur ea eu dolor esse incididunt aliqua qui nostrud dolor reprehenderit nulla."
+  }
+]

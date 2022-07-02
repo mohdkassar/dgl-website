@@ -1,16 +1,12 @@
 import React from "react";
 import "./services.css";
-import { FaAngleLeft, FaAngleRight } from "react-icons/fa";
-import appDevelopmentIcon from "../../assets/app_development_icon.png";
-import { useState } from "react";
+import DigitalMarketingCard from "./DigitalMarketing/DigitalMarketingCard";
+import digitalmarketingJSON from "./DigitalMarketing/digitalmarketing.json";
+import DigitalDevelopmentCard from "./DigitalDevelopment/DigitalDevelopmentCard";
+import digitaldevelopmentJSON from "./DigitalDevelopment/digitaldevelopment.json";
+import DigitalTransformation from "./DigitalTransformation/DigitalTransformation";
 
 const Services = ({ refference }) => {
-  const [digitalTransOption, setdigitalTransOption] = useState("a");
-
-  const digitalTransOptionPressed = (option) => {
-    setdigitalTransOption(option);
-  };
-
   return (
     <div className="dgl__services" ref={refference}>
       <div className="dgl_services-headline">
@@ -39,94 +35,22 @@ const Services = ({ refference }) => {
           </h3>
         </div>
         <div className="dgl_services-digital-marketing-options">
-          <div className="dgl_services-digital-marketing-option">
-            <div>
-              <h1 style={{ color: "#fff" }}>SEO</h1>
-            </div>
-            <div className="dgl_services-digital-marketing-option-paragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
-          <div className="dgl_services-digital-marketing-option">
-            <div>
-              <h1 style={{ color: "#fff" }}>Social Media</h1>
-            </div>
-            <div className="dgl_services-digital-marketing-option-paragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
-          <div className="dgl_services-digital-marketing-option">
-            <div>
-              <h1 style={{ color: "#fff" }}>Copywriting</h1>
-            </div>
-            <div className="dgl_services-digital-marketing-option-paragraph">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
+          {digitalmarketingJSON.map((option) => {
+            return (
+              <DigitalMarketingCard parameters={option}></DigitalMarketingCard>
+            );
+          })}
         </div>
       </div>
       <div className="dgl_services-digital-development">
         <div className="dgl_services-digital-development-list">
-          <div className="dgl_services-digital-development-dev-1">
-            <div className="dgl_services-digital-development-dev-1-icon">
-              {" "}
-              <img
-                src={appDevelopmentIcon}
-                style={{ width: "50%" }}
-                alt="app-development"
-              />
-            </div>
-            <div>
-              <h2>App Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
-          <div className="dgl_services-digital-development-dev-1">
-            <div className="dgl_services-digital-development-dev-1-icon">
-              {" "}
-              <img
-                src={appDevelopmentIcon}
-                style={{ width: "50%" }}
-                alt="app-development"
-              />
-            </div>
-            <div>
-              <h2>Web Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
-          <div className="dgl_services-digital-development-dev-1">
-            <div className="dgl_services-digital-development-dev-1-icon">
-              {" "}
-              <img
-                src={appDevelopmentIcon}
-                style={{ width: "50%" }}
-                alt="app-development"
-              />
-            </div>
-            <div>
-              <h2>UX/UI Development</h2>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna.
-              </p>
-            </div>
-          </div>
+          {digitaldevelopmentJSON.map((option) => {
+            return (
+              <DigitalDevelopmentCard
+                parameters={option}
+              ></DigitalDevelopmentCard>
+            );
+          })}
         </div>
         <div className="dgl_services-digital-development-header">
           <h3>
@@ -152,77 +76,7 @@ const Services = ({ refference }) => {
             <span style={{ color: "#01c8e9" }}>TRANSFORMATION</span>
           </h3>
         </div>
-        <div className="dgl_services-digital-transformation-content">
-          <div className="dgl_services-digital-transformation-content-button-list">
-            <div
-              className="dgl_services-digital-transformation-content-button-a"
-              style={{
-                width: "100px",
-                height: "100px",
-                backgroundImage:
-                  digitalTransOption === "a"
-                    ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
-                    : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
-                borderTop:
-                  digitalTransOption === "a" ? "1px solid yellow" : "none",
-              }}
-              onClick={() => digitalTransOptionPressed("a")}
-            >
-              {digitalTransOption === "a" ? (
-                <FaAngleRight size={20}></FaAngleRight>
-              ) : (
-                <FaAngleLeft size={20}></FaAngleLeft>
-              )}
-            </div>
-            <div
-              className="dgl_services-digital-transformation-content-button-b"
-              style={{
-                width: "100px",
-                height: "100px",
-                backgroundImage:
-                  digitalTransOption === "b"
-                    ? " linear-gradient(to bottom,#0076dd 0%,#01458c 50%,#01458c 100%)"
-                    : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
-                borderTop:
-                  digitalTransOption === "b" ? "1px solid yellow" : "none",
-              }}
-              onClick={() => digitalTransOptionPressed("b")}
-            >
-              {digitalTransOption === "b" ? (
-                <FaAngleRight size={20}></FaAngleRight>
-              ) : (
-                <FaAngleLeft size={20}></FaAngleLeft>
-              )}
-            </div>
-          </div>
-          {digitalTransOption === "b" ? (
-            <div className="dgl_services-digital-transformation-content-description">
-              <h1>Digital Business Development</h1>
-              <p style={{ fontSize: "small" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna. Cras
-                molestie interdum massa, in imperdiet turpis sollicitudin quis.
-                In malesuada orci vel enim dignissim ullamcorper. Sed laoreet
-                dolor eget posuere blandit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed ante urna, tristique in sapien
-                vitae, egestas egestas massa.
-              </p>
-            </div>
-          ) : (
-            <div className="dgl_services-digital-transformation-content-description">
-              <h1>Digital Test Development</h1>
-              <p style={{ fontSize: "small" }}>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-                odio neque, tempor at ante vel, dictum rutrum urna. Cras
-                molestie interdum massa, in imperdiet turpis sollicitudin quis.
-                In malesuada orci vel enim dignissim ullamcorper. Sed laoreet
-                dolor eget posuere blandit. Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit. Sed ante urna, tristique in sapien
-                vitae, egestas egestas massa.
-              </p>
-            </div>
-          )}
-        </div>
+        <DigitalTransformation></DigitalTransformation>
       </div>
     </div>
   );

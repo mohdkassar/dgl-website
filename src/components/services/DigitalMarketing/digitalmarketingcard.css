@@ -1,0 +1,44 @@
+.dgl_services-digital-marketing-card {
+  background-size: 200% auto;
+  margin: 1rem 1rem;
+  width: 10rem;
+  background-color: #0b102d;
+  padding: 1rem 1rem;
+  width: 250px;
+  background: linear-gradient(
+    to bottom,
+    var(--_t, #0a1230) 0%,
+    var(--_u, #0c1e4c) 50%,
+    var(--_v, #0c1e4c) 100%
+  );
+  position: relative;
+  flex-grow: 1;
+  border-bottom: 1px solid var(--_w, #173ea3);
+}
+
+.dgl_services-digital-marketing-card:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  bottom: 50%;
+  left: 0%;
+  border-left: 3px solid var(--_w, #173ea3);
+}
+
+.dgl_services-digital-marketing-card:hover {
+  --_t: #0076dd;
+  --_u: #01458c;
+  --_v: #01458c;
+  --_w: var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+}
+
+.dgl_services-digital-marketing-card h1 {
+  font-size: x-large;
+}
+
+.dgl_services-digital-marketing-card-paragraph {
+  font-size: medium;
+  color: white;
+}

@@ -1,0 +1,31 @@
+.dgl_services-digital-transformation-content {
+  align-items: center;
+  display: flex;
+  align-self: center;
+  color: white;
+}
+
+.dgl_services-digital-transformation-content-button-list {
+  padding: 1rem 1rem;
+}
+
+.dgl_services-digital-transformation-content-button-a,
+.dgl_services-digital-transformation-content-button-b {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.dgl_services-digital-transformation-content {
+  background-image: linear-gradient(
+    to right,
+    #0a1230 0%,
+    #0a1230 50%,
+    #0c1e4c 100%
+  );
+  border-right: 3px solid var(--blue);
+}
+
+.dgl_services-digital-transformation-content-description {
+  margin: 2rem 2rem;
+}

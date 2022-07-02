@@ -1,6 +1,7 @@
 import React from "react";
 import "./sustainability.css";
 import ai_img from "../../assets/ai.png";
+import Button from "../button/Button";
 
 const Sustainability = ({ refference }) => {
   return (
@@ -22,7 +23,7 @@ const Sustainability = ({ refference }) => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
         </h6>
         <div>
-          <button>BOOK A SLOT</button>
+          <Button name={"BOOK A SLOT"}></Button>
         </div>
       </div>
     </div>

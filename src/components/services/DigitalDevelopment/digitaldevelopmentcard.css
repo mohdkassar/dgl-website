@@ -1,0 +1,43 @@
+.dgl_services-digital-development-card {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  margin: 1rem 1rem;
+  padding: 1rem 1rem;
+  background: linear-gradient(
+    to bottom,
+    var(--_p, #0a1230) 0%,
+    var(--_q, #0c1e4c) 50%,
+    var(--_r, #0c1e4c) 100%
+  );
+  position: relative;
+  flex-grow: 1;
+}
+
+.dgl_services-digital-development-card:before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50%;
+  bottom: 50%;
+  left: 0%;
+  border-left: 3px solid var(--_s, #173ea3);
+}
+
+.dgl_services-digital-development-card:hover {
+  --_p: #0076dd;
+  --_q: #01458c;
+  --_r: #01458c;
+  --_s: yellow;
+  border-bottom: 1px solid yellow;
+}
+
+.dgl_services-digital-development-card-icon {
+  align-items: center;
+  display: flex;
+  align-self: center;
+}
+
+.dgl_services-digital-development-card-icon img {
+  align-items: center;
+}
