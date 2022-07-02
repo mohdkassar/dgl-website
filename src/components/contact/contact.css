@@ -1,97 +1,12 @@
-.row {
+.dgl__contact {
+  flex: 1;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
-.contactForm {
-  text-align: center;
+.dgl_contact-form {
   display: flex;
   justify-content: center;
-  padding: 1rem 1rem;
-}
-
-.consult-container {
-  width: 100%;
-}
-
-.consult-container select {
-  width: 80%;
-}
-
-form {
-  margin-top: 20px;
-  background: var(--blue);
-  padding: 1rem 1rem;
-  border-left: solid 4px var(--light);
-}
-
-.formRow {
-  margin: 10px 0 20px 0;
-}
-
-.formInput {
-  padding: 1rem 1rem;
-  margin: 1rem 1rem;
-  background-color: var(--light_blue);
-  box-shadow: 0 0 0 2px var(--blue);
-  border: none;
-}
-
-.formInput:focus {
-  background-color: var(--blue);
-  outline: none;
-  box-shadow: 0 0 0 2px var(--light_blue);
-  color: var(--light);
-}
-
-.formInput::placeholder {
-  color: var(--dark);
-  opacity: 1;
-}
-
-.formInput:focus::placeholder {
-  color: var(--light);
-  opacity: 1;
-}
-
-.errorMessage {
-  color: #f45532;
-  font-size: 14px;
-  margin: 0;
-  padding: 0;
-}
-
-#notifyToast {
-  color: #fff;
-  border-radius: 6px;
-  width: 200px;
-  margin-left: 75px;
-  background-color: var(--green);
-}
-
-.submit-btn {
-  background-color: var(--yellow);
-  color: brown !important;
-  font-weight: 1000;
-  font-size: 15px;
-  padding: 15px 50px;
-  border: 2px solid var(--light);
-  margin-bottom: 25px;
-}
-
-.submit-btn:hover {
-  background-color: var(--yellow);
-  border: 2px solid var(--green);
-}
-
-.submit-btn:disabled:hover {
-  background-color: var(--dark);
-  color: var(--green) !important;
-  cursor: wait;
-}
-
-@media (max-width: 768px) {
-  .submit-message {
-    width: 125px;
-    margin-left: 200px;
-  }
+  align-items: center;
 }

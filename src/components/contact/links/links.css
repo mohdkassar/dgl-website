@@ -1,0 +1,22 @@
+.dgl__links {
+  width: 500px;
+  color: aliceblue;
+  background-color: var(--dark_blue);
+}
+
+.dgl__links-container {
+  width: 300px;
+}
+
+.dgl__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dgl__link-icon {
+  align-items: center;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}

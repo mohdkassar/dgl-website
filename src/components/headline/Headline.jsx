@@ -2,16 +2,20 @@ import React from "react";
 import "./headline.css";
 import Separator from "../seperator/Separator";
 
-const Headline = ({ title, subheader }) => {
+const Headline = ({ title, subheader, separatorWidth }) => {
+  const first = title.split(" ")[0];
+  const last = title.split(" ");
+  last.shift();
+
   return (
     <div className="dgl__headline">
-      <Separator width={"5%"}></Separator>
+      <Separator width={separatorWidth ? separatorWidth : "5%"}></Separator>
       <div className="dgl__headline-title">
         <h2>
           <span style={{ color: "#fff" }}>
-            {title.split(" ").length > 0 ? title.split(" ")[0] : title}
+            {title.split(" ").length > 0 ? first : title}
           </span>{" "}
-          {title.split(" ").length > 0 ? title.split(" ")[1] : ""}
+          {title.split(" ").length > 0 ? last.join(" ") : ""}
         </h2>
       </div>
       <div className="dgl__headline-subheader">

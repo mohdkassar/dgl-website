@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { ToastContainer, toast } from "react-toastify";
 import emailjs from "emailjs-com";
+import "./contactform.css";
 
 const ContactForm = () => {
   const {

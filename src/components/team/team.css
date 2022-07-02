@@ -10,7 +10,7 @@
 
 .dgl__team-cards {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .dgl__team-card {

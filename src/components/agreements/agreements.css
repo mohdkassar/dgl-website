@@ -15,20 +15,27 @@
 }
 
 .dgl_agreements-card {
-  background: #0a1230;
+  background: var(--dark_blue);
   line-height: 5px;
   height: 550px;
+  width: 300px;
   padding: 1rem 1rem;
   border: solid 1px #fff;
 }
 
 .dgl_agreements-card-active {
-  background: linear-gradient(to bottom, #0076dd 0%, #0076dd 50%, #01458c 100%);
+  background: linear-gradient(
+    to bottom,
+    var(--light_blue) 0%,
+    var(--blue) 50%,
+    var(--blue) 100%
+  );
   line-height: 5px;
   height: 575px;
+  width: 300px;
   padding: 1rem 1rem;
-  border: solid 1px #fff;
-  border-bottom: 4px solid yellow;
+  border: solid 2px var(--yellow);
+  border-bottom: 4px solid var(--yellow);
 }
 
 .dgl_agreements-card-inquire {
@@ -52,7 +59,9 @@
 }
 
 .dgl_agreements-card-title {
+  display: flex;
   text-align: center;
+  justify-content: center;
   color: #fff;
 }
 
@@ -64,8 +73,15 @@
 
 .dgl_agreements-card-feature p {
   color: #fff;
+  display: flex;
+  text-align: center;
+  justify-content: center;
 }
 
 .dgl_agreements-card-features-list {
+  margin: 0 auto;
+  padding: 0 0 0 0;
+  margin-bottom: 1rem;
   list-style: none;
+  text-align: center;
 }

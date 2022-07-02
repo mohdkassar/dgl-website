@@ -8,7 +8,9 @@
 
 .dgl__button-content,
 .dgl__button-icon-container {
-  border: solid 2px var(--blue);
+  border-top: solid 2px var(--blue);
+  border-left: solid 2px var(--blue);
+  border-bottom: solid 2px var(--blue);
   height: 2rem;
   display: flex;
   align-items: center;
@@ -17,18 +19,23 @@
   vertical-align: middle;
 }
 
+.dgl__button-icon-container {
+  border-right: solid 2px var(--blue);
+}
+
 .dgl__button-content p {
   font-size: 15px;
   font-weight: 500;
 }
 
 .dgl__button-content {
-  padding: 0rem 1.5rem;
+  padding: 0.3rem 1.5rem;
+  background-color: var(--dark_blue);
 }
 
 .dgl__button-icon-container {
-  background-color: var(--dark_blue);
-  padding: 0rem 0.5rem;
+  background-color: var(--dark);
+  padding: 0.3rem 0.5rem;
 }
 
 .dgl__button-icon {

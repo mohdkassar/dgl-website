@@ -1,17 +1,13 @@
 import React from "react";
 import "./contact.css";
-import ContactForm from "./ContactForm";
+import ContactForm from "./contactform/ContactForm";
+import Links from "./links/Links";
+import Headline from "../headline/Headline";
 
 const Contact = ({ refference }) => {
   return (
     <div className="dgl__contact" ref={refference}>
-      <div className="dgl_contact-headline">
-        <div className="dgl_contact-headline-title">
-          <h2>
-            <span style={{ color: "#fff" }}>Get</span> In Touch
-          </h2>
-        </div>
-      </div>
+      <Headline title={"Get In Touch"} separatorWidth={"35%"}></Headline>
       <div className="dgl_contact-content">
         <div className="dgl_contact-content-list">
           <div className="dgl_contact-visit"></div>
@@ -21,6 +17,7 @@ const Contact = ({ refference }) => {
         </div>
       </div>
       <div className="dgl_contact-form">
+        <Links></Links>
         <ContactForm></ContactForm>
       </div>
     </div>
