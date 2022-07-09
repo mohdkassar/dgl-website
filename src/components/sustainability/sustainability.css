@@ -4,9 +4,9 @@
   align-items: center;
   background-image: linear-gradient(
     to right,
-    #0d1838 0%,
-    #0d1838 40%,
-    #173068 100%
+    var(--dark) 0%,
+    var(--dark) 10%,
+    var(--dark_blue) 100%
   );
   margin-top: 2rem;
 }

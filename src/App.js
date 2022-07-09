@@ -63,7 +63,7 @@ function App() {
       <NavBar navHeader={navHeader}></NavBar>
       <Banner refference={bannerRef}></Banner>
       <Services refference={servicesRef}></Services>
-      <Mission refference={missionRef}></Mission>
+      {/* <Mission refference={missionRef}></Mission> */}
       <Sustainability refference={sustainabilityRef}></Sustainability>
       <Agreements refference={agreementsRef}></Agreements>
       <Team refference={teamRef}></Team>

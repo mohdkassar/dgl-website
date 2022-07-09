@@ -14,15 +14,22 @@
 }
 
 .dgl__team-card {
-  background: #0a1230;
-  height: 850px;
+  /* background: linear-gradient(
+    to left,
+    var(--light_blue) 0%,
+    var(--light_blue) 50%,
+    var(--blue) 100%
+  ); */
+  width: 450px;
+  background-color: var(--dark_blue);
+  height: 700px;
   border: solid 2px #01c8e9;
   margin: 1rem 1rem;
 }
 
 .dgl__team-card-logo {
-  width: 500px;
-  border-bottom: solid 4px yellow;
+  width: 450px;
+  border-bottom: solid 4px var(--yellow);
 }
 
 .dgl__team-card-logo img {
@@ -36,15 +43,15 @@
 }
 
 .dgl__team-card-content-title {
-  color: yellow;
+  color: var(--yellow);
 }
 
 .dgl__team-card-content-role {
-  color: #4b6c94;
+  color: var(--grey);
 }
 
 .dgl__team-card-content-about {
-  color: #4b6c94;
+  color: var(--grey);
   text-align: center;
 }
 
