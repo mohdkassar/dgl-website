@@ -15,12 +15,12 @@ const DigitalTransformation = () => {
     {
       title: "Digital Business Development",
       description:
-        "Reprehenderit et proident quis do consequat fugiat culpa mollit in. Aliquip eu ex duis ut ut commodo mollit. Ipsum deserunt enim aliquip nisi nostrud magna labore officia irure velit aliqua. Elit magna sit reprehenderit tempor aute dolor dolor proident occaecat sunt aute elit.",
+        "The most important steps are the ones you’re about to take. Prepare to witness the metamorphosis of your business with multidisciplinary, creative, & analytical intelligence. Get better, faster and more precise results while lowering your long-term overhead costs. By pairing the right technological tools to your business, we will effectively position you as tomorrow’s market leader today.",
     },
     {
-      title: "Digital Test Development",
+      title: "Work in AI/VR/Sustainabiity",
       description:
-        "Reprehenderit et proident quis do consequat fugiat culpa mollit in. Aliquip eu ex duis ut ut commodo mollit. Ipsum deserunt enim aliquip nisi nostrud magna labore officia irure velit aliqua. Elit magna sit reprehenderit tempor aute dolor dolor proident occaecat sunt aute elit.",
+        "We at DigiLance believe in a bright future, one where the benefits of technology and the beauty of the environment could both be harnessed and enjoyed. To play an active role in sculpting that future, we offer special rates and a complimentary consultation to any businesses operating in the sectors of artificial intelligence, virtual reality and sustainability.",
     },
   ];
 

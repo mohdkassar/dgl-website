@@ -7,20 +7,25 @@ const Sustainability = ({ refference }) => {
   return (
     <div className="dgl__sustainabilty" ref={refference}>
       <div className="dgl__sustainabilty_logo">
-        <img src={ai_img} alt="sustainabilty" style={{ width: "60%" }} />
+        <img src={ai_img} alt="sustainabilty" style={{ width: "90%" }} />
       </div>
       <div className="dgl__sustainabilty-header_container">
         <h1>
-          <span>Work in AI/VR/</span>
-          <span style={{ display: "block" }}>Sustainability</span>
+          <span>
+            Work in <span className="big_blue">AI/VR/</span>
+          </span>
+          <span className="big_blue" style={{ display: "block" }}>
+            Sustainability
+          </span>
         </h1>
         <h4>RECEIVE A COMPLIMENTARY CONSULTANCY</h4>
         <h6>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio
-          neque, tempor at ante vel, dictum rutrum urna. Cras molestie interdum
-          massa, in imperdiet turpis sollicitudin quis. In malesuada orci vel
-          enim dignissim ullamcorper. Sed laoreet dolor eget posuere blandit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+          We at DigiLance believe in a bright future, one where the benefits of
+          technology and the beauty of the environment could both be harnessed
+          and enjoyed. To play an active role in sculpting that future, we offer
+          special rates and a complimentary consultation to any businesses
+          operating in the sectors of artificial intelligence, virtual reality
+          and sustainability.
         </h6>
         <div>
           <Button name={"BOOK A SLOT"}></Button>

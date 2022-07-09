@@ -10,11 +10,11 @@ const Banner = ({ refference }) => {
         <h4>WELCOME TO DIGILANCE</h4>
         <h1>Infinitely Possible</h1>
         <h6>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris odio
-          neque, tempor at ante vel, dictum rutrum urna. Cras molestie interdum
-          massa, in imperdiet turpis sollicitudin quis. In malesuada orci vel
-          enim dignissim ullamcorper. Sed laoreet dolor eget posuere blandit.
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.{" "}
+          Empower your business by capitalizing on the synergy of creativity and
+          technology that we have carefully cultivated. Our suite of services
+          has been precisely developed with the goal of accelerating your
+          business quickly and sustainably. Let’s embark on the journey of
+          transforming your operation into a scalable empire.
         </h6>
         <Button name={"GET CONSULT"}></Button>
       </div>

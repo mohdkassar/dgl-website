@@ -11,7 +11,12 @@ import ServiceTitle from "./ServiceTitle/ServiceTitle";
 const Services = ({ refference }) => {
   return (
     <div className="dgl__services" ref={refference}>
-      <Headline title={"Our Services"}></Headline>
+      <Headline
+        title={"Our Services"}
+        subheader={
+          "Discover a dynamic ecosystem of practices attuned to the needs of your business."
+        }
+      ></Headline>
       <div className="dgl_services-digital-marketing">
         <ServiceTitle number={"01"} title={"DIGITAL MARKETING"}></ServiceTitle>
         <div className="dgl_services-digital-marketing-options">

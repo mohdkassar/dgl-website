@@ -4,7 +4,12 @@
   align-items: center;
   text-align: center;
   width: fit-content;
-  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.dgl__button:hover {
+  box-shadow: 0 0 8px rgb(73, 173, 255);
 }
 
 .dgl__button-content,

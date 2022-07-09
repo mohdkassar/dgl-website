@@ -32,11 +32,6 @@ function App() {
       headerID: "services",
     },
     {
-      headerTitle: "Mission",
-      headerRef: missionRef,
-      headerID: "mission",
-    },
-    {
       headerTitle: "Sustainability",
       headerRef: sustainabilityRef,
       headerID: "sustainability",
