@@ -33,6 +33,7 @@ const Services = ({ refference }) => {
             return (
               <DigitalDevelopmentCard
                 parameters={option}
+                id={option.id}
               ></DigitalDevelopmentCard>
             );
           })}

@@ -8,7 +8,10 @@ const Banner = ({ refference }) => {
     <div className="dgl__banner" ref={refference}>
       <div className="dgl__banner-header_container">
         <h4>WELCOME TO DIGILANCE</h4>
-        <h1>Infinitely Possible</h1>
+        <h1>
+          <span>Infinitely</span>
+          <span style={{ display: "block" }}> Possible</span>
+        </h1>
         <h6>
           Empower your business by capitalizing on the synergy of creativity and
           technology that we have carefully cultivated. Our suite of services
