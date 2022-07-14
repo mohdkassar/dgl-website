@@ -10,7 +10,7 @@ import ServiceTitle from "./ServiceTitle/ServiceTitle";
 
 const Services = ({ refference }) => {
   return (
-    <div className="dgl__services" ref={refference}>
+    <div className="dgl__section column" ref={refference}>
       <Headline
         title={"Our Services"}
         subheader={

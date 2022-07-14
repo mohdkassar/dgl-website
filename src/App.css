@@ -3,6 +3,32 @@
   background-color: var(--dark);
 }
 
+.dgl__section {
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 9rem;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  flex: 1;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.start {
+  align-items: flex-start;
+}
+
+.dgl__paragraph {
+  color: var(--grey);
+  font-family: var(--font-family);
+  font-weight: 100;
+  font-size: 15px;
+  text-align: left;
+}
+
 :root {
   --light: #d0d1d3;
   --dark: rgb(10, 14, 41);

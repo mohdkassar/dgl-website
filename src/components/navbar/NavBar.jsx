@@ -94,7 +94,7 @@ const NavBar = ({ navHeader }) => {
                 background:
                   activeIndex === index
                     ? " linear-gradient(to top,#0b122f 0%,#1f497b 70%,#1f497b 100%)"
-                    : "#0b122f",
+                    : "var(--dark)",
               }}
               href={`#${header.headerID}`}
             >

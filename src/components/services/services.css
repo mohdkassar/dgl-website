@@ -1,13 +1,3 @@
-.dgl__services {
-  flex: 1;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
-  flex-direction: column;
-  padding: 0rem 3rem;
-}
-
 .dgl_services-digital-marketing,
 .dgl_services-digital-marketing-options {
   flex: 1;

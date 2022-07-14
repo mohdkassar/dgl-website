@@ -1,10 +1,14 @@
 .dgl__banner {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: flex-start;
-  padding: 0rem 3rem;
+  padding: 0rem 9rem;
   margin-top: 5rem;
   margin-bottom: 5rem;
+}
+
+.dgl__banner_logo {
+  width: 50%;
 }
 
 .dgl__banner_logo img {
@@ -16,6 +20,7 @@
 
 .dgl__banner-header_container {
   text-align: left;
+  width: 50%;
 }
 
 .dgl__banner-header_container h1 {
@@ -34,11 +39,6 @@
 }
 
 .dgl__banner-header_container h6 {
-  color: var(--grey);
-  font-family: var(--font-family);
-  font-weight: 100;
-  font-size: 15px;
-  text-align: left;
   width: 500px;
 }
 

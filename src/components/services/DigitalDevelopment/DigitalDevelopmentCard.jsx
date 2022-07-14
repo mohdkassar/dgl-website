@@ -33,7 +33,7 @@ const DigitalDevelopmentCard = ({ parameters, id }) => {
       </div>
       <div className="dgl_services-digital-development-card-content">
         <h2>{parameters.title}</h2>
-        <p>{parameters.description}</p>
+        <p className="dgl__paragraph">{parameters.description}</p>
       </div>
     </div>
   );

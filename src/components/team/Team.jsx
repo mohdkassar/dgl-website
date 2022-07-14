@@ -6,7 +6,7 @@ import Headline from "../headline/Headline";
 
 const Team = ({ refference }) => {
   return (
-    <div className="dgl__team" ref={refference}>
+    <div className="dgl__section column" ref={refference}>
       <Headline title={"Our Team"}></Headline>
       <div className="dgl__team-cards">
         {members.map((member) => {

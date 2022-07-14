@@ -10,7 +10,7 @@ const DigitalMarketingCard = ({ parameters }) => {
       </div>
       <Separator width={"20%"}></Separator>
       <div className="dgl_services-digital-marketing-card-paragraph">
-        <p>{parameters.description}</p>
+        <p className="dgl__paragraph">{parameters.description}</p>
       </div>
     </div>
   );
