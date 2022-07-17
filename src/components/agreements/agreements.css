@@ -19,7 +19,10 @@
   height: 550px;
   width: 300px;
   padding: 1rem 1rem;
-  border: solid 1px #fff;
+  border-top: solid 1px #fff;
+  border-bottom: solid 1px #fff;
+  border-right: solid 1px #fff;
+  transition: opacity 1s;
 }
 
 .dgl_agreements-card-active {
@@ -34,7 +37,13 @@
   width: 300px;
   padding: 1rem 1rem;
   border: solid 2px var(--yellow);
-  border-bottom: 4px solid var(--yellow);
+  border-bottom: 6px solid var(--yellow);
+  box-shadow: rgba(166, 165, 165, 0.25) 0px 54px 55px,
+    rgba(132, 131, 131, 0.12) 0px -12px 30px,
+    rgba(163, 161, 161, 0.12) 0px 4px 6px,
+    rgba(179, 177, 177, 0.17) 0px 12px 13px,
+    rgba(147, 145, 145, 0.09) 0px -3px 5px;
+  transition: opacity 1s;
 }
 
 .dgl_agreements-card-inquire {
@@ -44,8 +53,12 @@
 }
 
 .dgl_agreements-card-duration {
-  color: #fff;
   text-align: center;
+}
+
+.dgl_agreements-card-title {
+  letter-spacing: 3px;
+  font-size: 12px;
 }
 
 .dgl_agreements-card-logo {
@@ -53,8 +66,8 @@
 }
 
 .dgl_agreements-card-logo img {
-  width: 40%;
-  height: 40%;
+  width: 35%;
+  height: 35%;
 }
 
 .dgl_agreements-card-title {
@@ -71,7 +84,6 @@
 }
 
 .dgl_agreements-card-feature p {
-  color: #fff;
   display: flex;
   text-align: center;
   justify-content: center;

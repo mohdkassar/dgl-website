@@ -9,11 +9,19 @@ const AgreementCard = ({ active, onClick, parameters }) => {
   return (
     <div
       className={`dgl_agreements-card${active ? "-active" : ""}`}
-      onClick={() => onClick(parameters.id)}
+      onMouseEnter={() => onClick(parameters.id)}
+      style={{ opacity: active ? 1 : 0.5 }}
     >
       <div className="dgl_agreements-card-duration">
-        <h4>{parameters.duration.title}</h4>
-        <p>{parameters.duration.subheader}</p>
+        <h2 style={{ color: active ? "#fff" : "var(--light_blue)" }}>
+          {parameters.duration.title}
+        </h2>
+        <p
+          className="dgl_agreements-card-title"
+          style={{ color: active ? "var(--yellow)" : "var(--grey)" }}
+        >
+          {parameters.duration.subheader.toUpperCase()}
+        </p>
       </div>
       <div className="dgl_agreements-card-logo">
         <img
@@ -35,7 +43,7 @@ const AgreementCard = ({ active, onClick, parameters }) => {
           {parameters.features.map((header) => {
             return (
               <li className="dgl_agreements-card-feature">
-                <p>{header}</p>
+                <p className="dgl__paragraph">{header}</p>
               </li>
             );
           })}

@@ -39,7 +39,7 @@ const DigitalTransformation = () => {
           onClick={() => digitalTransOptionPressed("a")}
         >
           {digitalTransOption === "a" ? (
-            <FaAngleRight size={20}></FaAngleRight>
+            <FaAngleRight color="var(--light_blue)" size={20}></FaAngleRight>
           ) : (
             <FaAngleLeft size={20}></FaAngleLeft>
           )}
@@ -56,7 +56,7 @@ const DigitalTransformation = () => {
           onClick={() => digitalTransOptionPressed("b")}
         >
           {digitalTransOption === "b" ? (
-            <FaAngleRight size={20}></FaAngleRight>
+            <FaAngleRight color="var(--light_blue)" size={20}></FaAngleRight>
           ) : (
             <FaAngleLeft size={20}></FaAngleLeft>
           )}
