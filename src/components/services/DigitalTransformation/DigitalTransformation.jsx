@@ -28,7 +28,9 @@ const DigitalTransformation = () => {
     <div className="dgl_services-digital-transformation-content">
       <div className="dgl_services-digital-transformation-content-button-list">
         <div
-          className="dgl_services-digital-transformation-content-button-a"
+          className={`dgl_services-digital-transformation-content-button-a ${
+            digitalTransOption === "a" ? "active" : "inactive"
+          }`}
           style={{
             backgroundImage:
               digitalTransOption === "a"
@@ -36,7 +38,7 @@ const DigitalTransformation = () => {
                 : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
             borderTop: digitalTransOption === "a" ? "3px solid yellow" : "none",
           }}
-          onClick={() => digitalTransOptionPressed("a")}
+          onMouseEnter={() => digitalTransOptionPressed("a")}
         >
           {digitalTransOption === "a" ? (
             <FaAngleRight color="var(--light_blue)" size={20}></FaAngleRight>
@@ -45,7 +47,9 @@ const DigitalTransformation = () => {
           )}
         </div>
         <div
-          className="dgl_services-digital-transformation-content-button-b"
+          className={`dgl_services-digital-transformation-content-button-b ${
+            digitalTransOption === "b" ? "active" : "inactive"
+          }`}
           style={{
             backgroundImage:
               digitalTransOption === "b"
@@ -53,7 +57,7 @@ const DigitalTransformation = () => {
                 : "linear-gradient(to right,#0a1230 0%,#0a1230 50%,#0c1e4c 100%)",
             borderTop: digitalTransOption === "b" ? "3px solid yellow" : "none",
           }}
-          onClick={() => digitalTransOptionPressed("b")}
+          onMouseEnter={() => digitalTransOptionPressed("b")}
         >
           {digitalTransOption === "b" ? (
             <FaAngleRight color="var(--light_blue)" size={20}></FaAngleRight>
@@ -64,18 +68,18 @@ const DigitalTransformation = () => {
       </div>
       {digitalTransOption === "b" ? (
         <div className="dgl_services-digital-transformation-content-description">
-          <h1>{digitalTransformationJSON[0].title}</h1>
-          <Separator width={"5%"}></Separator>
-          <p className="dgl__paragraph">
-            {digitalTransformationJSON[0].description}
-          </p>
-        </div>
-      ) : (
-        <div className="dgl_services-digital-transformation-content-description">
           <h1>{digitalTransformationJSON[1].title}</h1>
           <Separator width={"5%"}></Separator>
           <p className="dgl__paragraph">
             {digitalTransformationJSON[1].description}
+          </p>
+        </div>
+      ) : (
+        <div className="dgl_services-digital-transformation-content-description">
+          <h1>{digitalTransformationJSON[0].title}</h1>
+          <Separator width={"5%"}></Separator>
+          <p className="dgl__paragraph">
+            {digitalTransformationJSON[0].description}
           </p>
         </div>
       )}

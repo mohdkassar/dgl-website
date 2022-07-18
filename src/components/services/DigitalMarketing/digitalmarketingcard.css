@@ -38,7 +38,7 @@
   --_w: var(--yellow);
   /* border-radius: 25px; */
   border-bottom: 3px solid var(--yellow);
-  opacity: 1s;
+  opacity: 1;
 }
 
 .dgl_services-digital-marketing-card h1 {
