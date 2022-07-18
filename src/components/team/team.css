@@ -6,57 +6,10 @@
   padding: 1rem 9rem;
   margin: 1rem 1rem;
   text-align: left;
+  position: relative;
 }
 
 .dgl__team-cards {
   display: flex;
   justify-content: space-evenly;
-}
-
-.dgl__team-card {
-  /* background: linear-gradient(
-    to left,
-    var(--light_blue) 0%,
-    var(--light_blue) 50%,
-    var(--blue) 100%
-  ); */
-  width: 450px;
-  background-color: var(--dark_blue);
-  height: 700px;
-  border: solid 2px #01c8e9;
-  margin: 1rem 1rem;
-}
-
-.dgl__team-card-logo {
-  width: 450px;
-  border-bottom: solid 4px var(--yellow);
-}
-
-.dgl__team-card-logo img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
-.dgl__team-card-content {
-  line-height: 25px;
-  text-align: center;
-}
-
-.dgl__team-card-content-title {
-  color: var(--yellow);
-}
-
-.dgl__team-card-content-role {
-  color: var(--grey);
-}
-
-.dgl__team-card-content-about {
-  color: var(--grey);
-  text-align: center;
-}
-
-.dgl__team-card-content-about h6 {
-  text-align: justify;
-  margin: 0 auto;
-  max-width: 400px;
 }

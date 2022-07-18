@@ -1,0 +1,18 @@
+.dgl__team_card_social {
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.dgl__team_card_social div {
+  margin-left: 1rem;
+  color: var(--light_blue);
+  transition: color 0.25s;
+  cursor: pointer;
+}
+
+.dgl__team_card_social div:hover {
+  color: var(--yellow);
+}

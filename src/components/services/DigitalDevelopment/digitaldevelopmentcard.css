@@ -12,6 +12,8 @@
   position: relative;
   flex-grow: 1;
   width: 1000px;
+  opacity: 0.8;
+  transition: opacity 1s;
 }
 
 .dgl_services-digital-development-card:before {
@@ -28,8 +30,9 @@
   --_p: #0076dd;
   --_q: #01458c;
   --_r: #01458c;
-  --_s: yellow;
+  --_s: var(--yellow);
   border-bottom: 3px solid var(--yellow);
+  opacity: 1;
 }
 
 .dgl_services-digital-development-card-icon {

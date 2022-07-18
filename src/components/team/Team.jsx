@@ -1,7 +1,7 @@
 import React from "react";
 import "./team.css";
 import members from "./members.json";
-import TeamCard from "./TeamCard";
+import TeamCard from "./TeamCard/TeamCard";
 import Headline from "../headline/Headline";
 
 const Team = ({ refference }) => {
