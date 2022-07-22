@@ -25,9 +25,9 @@ const Links = () => {
   return (
     <div className="dgl__links">
       <div className="dgl__links-container">
-        {linksJSON.map((link) => {
+        {linksJSON.map((link, index) => {
           return (
-            <div className="dgl__link">
+            <div className="dgl__link" key={`dgl__link-${index}`}>
               <div className="dgl__link-icon">
                 <FaMapMarkerAlt></FaMapMarkerAlt>
               </div>

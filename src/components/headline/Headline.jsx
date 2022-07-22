@@ -7,9 +7,15 @@ const Headline = ({ title, subheader, separatorWidth }) => {
   const last = title.split(" ");
   last.shift();
 
+  const isSeparator = separatorWidth ? true : false;
+
   return (
     <div className="dgl__headline">
-      <Separator width={separatorWidth ? separatorWidth : "5%"}></Separator>
+      {isSeparator ? (
+        <Separator width={separatorWidth ? separatorWidth : "5%"}></Separator>
+      ) : (
+        ""
+      )}
       <div className="dgl__headline-title">
         <h2>
           <span style={{ color: "#fff" }}>

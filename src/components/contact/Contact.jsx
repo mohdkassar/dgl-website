@@ -7,17 +7,11 @@ import Headline from "../headline/Headline";
 const Contact = ({ refference }) => {
   return (
     <div className="dgl__contact" ref={refference}>
-      <Headline title={"Get In Touch"} separatorWidth={"35%"}></Headline>
-      <div className="dgl_contact-content">
-        <div className="dgl_contact-content-list">
-          <div className="dgl_contact-visit"></div>
-          <div className="dgl_contact-email"></div>
-          <div className="dgl_contact-call"></div>
-          <div className="dgl_contact-support"></div>
-        </div>
-      </div>
       <div className="dgl_contact-form">
-        <Links></Links>
+        <div className="dgl__contact-left">
+          <Headline title={"Get In Touch"}></Headline>
+          <Links></Links>
+        </div>
         <ContactForm></ContactForm>
       </div>
     </div>

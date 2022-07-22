@@ -16,22 +16,27 @@ const Services = ({ refference }) => {
         subheader={
           "Discover a dynamic ecosystem of practices attuned to the needs of your business."
         }
+        separatorWidth="5%"
       ></Headline>
       <div className="dgl_services-digital-marketing">
         <ServiceTitle number={"01"} title={"DIGITAL MARKETING"}></ServiceTitle>
         <div className="dgl_services-digital-marketing-options">
-          {digitalmarketingJSON.map((option) => {
+          {digitalmarketingJSON.map((option, index) => {
             return (
-              <DigitalMarketingCard parameters={option}></DigitalMarketingCard>
+              <DigitalMarketingCard
+                key={`dgl__digital-marketing-card-${index}`}
+                parameters={option}
+              ></DigitalMarketingCard>
             );
           })}
         </div>
       </div>
       <div className="dgl_services-digital-development">
         <div className="dgl_services-digital-development-list">
-          {digitaldevelopmentJSON.map((option) => {
+          {digitaldevelopmentJSON.map((option, index) => {
             return (
               <DigitalDevelopmentCard
+                key={`dgl__digital-development-card-${index}`}
                 parameters={option}
                 id={option.id}
               ></DigitalDevelopmentCard>

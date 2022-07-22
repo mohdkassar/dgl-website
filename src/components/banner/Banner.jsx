@@ -6,6 +6,7 @@ import Button from "../button/Button";
 const Banner = ({ refference }) => {
   return (
     <div className="dgl__section start" ref={refference}>
+      {/* <div className="dgl__background-circle-2"></div> */}
       <div className="dgl__banner-header_container">
         <h4>WELCOME TO DIGILANCE</h4>
         <h1>

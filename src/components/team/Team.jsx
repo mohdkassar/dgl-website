@@ -9,8 +9,13 @@ const Team = ({ refference }) => {
     <div className="dgl__section column" ref={refference}>
       <Headline title={"Our Team"}></Headline>
       <div className="dgl__team-cards">
-        {members.map((member) => {
-          return <TeamCard parameters={member}></TeamCard>;
+        {members.map((member, index) => {
+          return (
+            <TeamCard
+              parameters={member}
+              key={`dgl__team-card-${index}`}
+            ></TeamCard>
+          );
         })}
       </div>
     </div>

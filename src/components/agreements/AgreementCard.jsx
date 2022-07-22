@@ -40,9 +40,12 @@ const AgreementCard = ({ active, onClick, parameters }) => {
       </div>
       <div className="dgl_agreements-card-features">
         <ul className="dgl_agreements-card-features-list">
-          {parameters.features.map((header) => {
+          {parameters.features.map((header, index) => {
             return (
-              <li className="dgl_agreements-card-feature">
+              <li
+                className="dgl_agreements-card-feature"
+                key={`dgl_agreements-card-feature-${index}`}
+              >
                 <p className="dgl__paragraph">{header}</p>
               </li>
             );

@@ -78,6 +78,7 @@ const NavBar = ({ navHeader }) => {
 
   return (
     <div className="dgl__navbar">
+      {/* <div className="dgl__background-circle"></div> */}
       <div className="dgl__navbar-links">
         <div className="dgl__navbar-links_logo">
           <img src={logo} alt="logo" />
@@ -90,6 +91,7 @@ const NavBar = ({ navHeader }) => {
                   ? "dgl__navbar-links_container_a_active"
                   : "dgl__navbar-links_container_a_not_active"
               }
+              key={`dgl__navbar-links_container-${index}`}
               style={{
                 background:
                   activeIndex === index
